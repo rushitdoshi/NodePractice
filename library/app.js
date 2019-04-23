@@ -16,10 +16,23 @@ app.set('views', './src/views');
 // app.set('view engine', 'pug');
 app.set('view engine', 'ejs');
 
+const nav = [
+  { link: '/books', title: 'Book' },
+  { link: '/authors', title: 'Author' }
+];
+const bookRouter = require('./src/routes/bookRoutes')(nav);
+
+app.use('/books', bookRouter);
 app.get('/', (req, res) => {
   // res.send('Hello from my library app');
   // res.sendFile(path.join(__dirname, 'views/index.html'));
-  res.render('index', { list: ['a', 'b'], title: 'Library' });
+  res.render(
+    'index',
+    {
+      nav,
+      title: 'Library'
+    }
+  );
 });
 
 app.listen(port, () => {
