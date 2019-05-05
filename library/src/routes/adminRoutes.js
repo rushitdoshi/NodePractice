@@ -62,7 +62,7 @@ function router(nav) {
         } catch (err) {
           debug(err.stack);
         }
-
+        // close connection
         client.close();
       }());
     });
