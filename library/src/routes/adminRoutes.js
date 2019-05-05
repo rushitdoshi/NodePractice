@@ -8,36 +8,42 @@ const books = [
     title: 'War and Peace',
     genre: 'Historical Fiction',
     author: 'Lev Nikolayevich Tolstoy',
+    bookId: 656,
     read: false
   },
   {
     title: 'Les Moserables',
     genre: 'Historical Fiction',
     author: 'Victor Hugo',
+    bookId: 24280,
     read: false
   },
   {
     title: 'The Time Machine',
     genre: 'Science Fiction',
     author: 'H. G. Wells',
+    bookId: 2493,
     read: false
   },
   {
     title: 'The Wind in the Willows',
     genre: 'Fantasy',
     author: 'Kenneth Grahame',
+    bookId: 5659,
     read: false
   },
   {
     title: 'Life On the Mississippi',
     genre: 'History',
     author: 'Mark Twain',
+    bookId: 99152,
     read: false
   },
   {
     title: 'Childhood',
     genre: 'Biography',
     author: 'Lev Nikolayevich Tolstoy',
+    bookId: 44583847,
     read: false
   }
 ];
